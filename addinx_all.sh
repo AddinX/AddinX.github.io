@@ -1,0 +1,1 @@
+. addinx_1_multiserve_pdf.sh; . addinx_2_multibuild_pdf.sh; . addinx_3_multibuild_web.sh; . addinx_4_publish.sh;

@@ -1,0 +1,625 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+# Sidebar
+entries:
+- title: Sidebar
+  subcategories:
+  - title:
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: pdf
+    type: frontmatter
+    items:
+    - title:
+      url: /titlepage.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: Introduction
+      url: /addinx/home.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Supported features
+      url: /addinx/addinx_supported_features.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: About the theme author
+      url: /addinx/addinx_about.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+
+    - title: Support
+      url: /addinx/addinx_support.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+
+  - title: Get started
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: 1. Build the default project
+      url: /addinx/addinx_getting_started.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 2. Add a new project
+      url: /addinx/addinx_adding_new_projects.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 3. Decide on your project's attributes
+      url: /addinx/addinx_decide_on_attributes.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 4. Set the configuration options
+      url: /addinx/addinx_configuration_settings.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 5. Customize the conditions file
+      url: /addinx/addinx_conditions_file_customization.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 6. Configure the sidebar
+      url: /addinx/addinx_configure_sidebar.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 7. Configure the top navigation
+      url: /addinx/addinx_top_navigation.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 8. Customize the URL generator
+      url: /addinx/addinx_url_generator_customization.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 9. Set up Prince XML
+      url: /addinx/addinx_princexml_setup.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: 10. Configure the build scripts
+      url: /addinx/addinx_build_scripts.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: Authoring
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: Pages
+      url: /addinx/addinx_pages.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: WebStorm Text Editor
+      url: /addinx/addinx_webstorm_text_editor.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Conditional logic
+      url: /addinx/addinx_conditional_logic.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Content reuse
+      url: /addinx/addinx_content_reuse.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Collections
+      url: /addinx/addinx_collections.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: Navigation
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: Sidebar navigation
+      url: /addinx/addinx_sidebar_navigation.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: YAML tutorial in the context of Jekyll
+      url: /addinx/addinx_yaml_tutorial.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+
+    - title: Tags
+      url: /addinx/addinx_tags.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Series
+      url: /addinx/addinx_series.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: Formatting
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: Tooltips
+      url: /addinx/addinx_adding_tooltips.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Alerts
+      url: /addinx/addinx_alerts.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Icons
+      url: /addinx/addinx_icons.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Images
+      url: /addinx/addinx_images.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Labels
+      url: /addinx/addinx_labels.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Links
+      url: /addinx/addinx_hyperlinks.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Navtabs
+      url: /addinx/addinx_navtabs.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Video embeds
+      url: /addinx/addinx_video_embeds.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Tables
+      url: /addinx/addinx_tables.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Syntax highlighting
+      url: /addinx/addinx_syntax_highlighting.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: Handling reviews
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+    - title: Commenting on files
+      url: /addinx/addinx_commenting_on_files.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: Publishing
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+
+    - title: Build arguments
+      url: /addinx/addinx_build_arguments.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Themes
+      url: /addinx/addinx_themes.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Link validation
+      url: /addinx/addinx_link_validation.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Check page title consistency
+      url: /addinx/addinx_title_checker.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Generating PDFs
+      url: /addinx/addinx_generating_pdfs.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Excluding files
+      url: /addinx/addinx_excluding_files.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Help APIs and UI tooltips
+      url: /addinx/addinx_help_api.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Search configuration
+      url: /addinx/addinx_search_configuration.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: iTerm profiles
+      url: /addinx/addinx_iterm_profiles.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Pushing builds to server
+      url: /addinx/addinx_push_build_to_server.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Getting around the password prompts in SCP
+      url: /addinx/addinx_no_password_prompts_scp.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: Special layouts
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+
+    - title: Knowledge-base layout
+      url: /addinx/addinx_kb_layout.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Scroll layout
+      url: /addinx/addinx_scroll.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Shuffle layout
+      url: /addinx/addinx_shuffle.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: FAQ layout
+      url: /addinx/addinx_faq.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+    - title: Glossary layout
+      url: /addinx/addinx_glossary.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: Algolia search
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+
+    - title: Configuring Algolia search
+      url: /addinx/addinx_algoliasearch.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: Collaborating with version control
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+
+    - title: Mercurial notes and tips
+      url: /addinx/addinx_mercurial_collaboration.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+#    - title: Git notes and tips
+#      url: /addinx/addinx_git_collaboration.html
+#      audience: writers, designers
+#      platform: all
+#      product: all
+#      version: all
+#      output: web, pdf
+
+  - title: Troubleshooting
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web, pdf
+    items:
+
+    - title: Troubleshooting
+      url: /addinx/addinx_troubleshooting.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
+  - title: Tag archives
+    audience: writers, designers
+    platform: all
+    product: all
+    version: all
+    output: web
+    items:
+
+    - title: Tag archives overview
+      url: /addinx/addinx_tag_archives_overview.html
+      audience: writers, designers
+      platform: all
+      product: all
+      version: all
+      output: web
+
+      thirdlevel:
+      - title: Tag archive pages
+        audience: writers, designers
+        platform: all
+        version: all
+        product: all
+        output: web
+        thirdlevelitems:
+        - title: Getting started pages
+          url: /addinx/tag_getting_started.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: Formatting pages
+          url: /addinx/tag_formatting.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: Navigation pages
+          url: /addinx/tag_navigation.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: Content types pages
+          url: /addinx/tag_content_types.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: Publishing pages
+          url: /addinx/tag_publishing.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: Special layout pages
+          url: /addinx/tag_special_layouts.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web
+
+        - title: Collaboration pages
+          url: /addinx/tag_collaboration.html
+          audience: writers, designers
+          platform: all
+          version: all
+          product: all
+          output: web

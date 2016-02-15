@@ -1,0 +1,12 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  subcategories:
+    - title: Github Repos
+      external_url: https://github.com/AddinX
+      audience: everyone
+      platform: all
+      product: all
+      version: all
+      output: web
