@@ -1,10 +1,15 @@
 kill -9 $(ps aux | grep '[j]ekyll' | awk '{print $2}')
 clear
 
-echo "Building addinx Writers website..."
-jekyll build --config configs/addinx/config_everyone.yml
+echo "Starting website..."
+jekyll serve --config configs/addinx/config_everyone.yml
+
+#echo "Building addinx Writers website..."
+#jekyll build --config configs/addinx/config_everyone.yml
 # jekyll serve --config configs/addinx/config_writers.yml
-echo "done"
+#echo "done"
+
+
 
 #echo "Building addinx Designers websote..."
 #jekyll build --config configs/addinx/config_designers.yml

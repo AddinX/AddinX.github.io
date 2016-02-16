@@ -5,7 +5,7 @@ entries:
 - title: Sidebar
   subcategories:
   - title:
-    audience: writers, designers
+    audience: everyone
     platform: all
     product: all
     version: all
@@ -14,7 +14,7 @@ entries:
     items:
     - title:
       url: /titlepage.html
-      audience: writers, designers
+      audience: everyone
       platform: all
       product: all
       version: all
@@ -22,7 +22,7 @@ entries:
       type: frontmatter
     - title:
       url: /tocpage.html
-      audience: writers, designers
+      audience: everyone
       platform: all
       product: all
       version: all
@@ -30,62 +30,38 @@ entries:
       type: frontmatter
 
   - title: Overview
-    audience: writers, designers
+    audience: everyone
     platform: all
     product: all
     version: all
     output: web, pdf
     items:
-    - title: Introduction
+    - title: Presentation
       url: /addinx/home.html
-      audience: writers, designers
+      audience: everyone
       platform: all
       product: all
       version: all
       output: web, pdf
 
-    - title: Supported features
-      url: /addinx/addinx_supported_features.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
-
-    - title: About the theme author
-      url: /addinx/addinx_about.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-
-    - title: Support
-      url: /addinx/addinx_support.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-
-  - title: Get started
-    audience: writers, designers
+  - title: Ribbon Builder
+    audience: everyone
     platform: all
     product: all
     version: all
     output: web, pdf
     items:
-    - title: 1. Build the default project
-      url: /addinx/addinx_getting_started.html
-      audience: writers, designers
+    - title: 1. Installation
+      url: /addinx/fluent_builder_install.html
+      audience: everyone
       platform: all
       product: all
       version: all
       output: web, pdf
 
-    - title: 2. Add a new project
-      url: /addinx/addinx_adding_new_projects.html
-      audience: writers, designers
+    - title: 2. Quick Start
+      url: /addinx/fluent_builder_quickstart.html
+      audience: everyone
       platform: all
       product: all
       version: all
