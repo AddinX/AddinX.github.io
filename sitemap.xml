@@ -7,7 +7,7 @@ search: exclude
   {% for post in site.posts %}
     {% unless post.published == false %}
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
+      <loc>http://{{ site.url }}{{ post.url }}</loc>
       {% if post.sitemap.last_updated %}
         <last_updated>{{ post.sitemap.last_updated | date: "%Y-%m-%d" }}</last_updated>
       {% elsif post.date %}
@@ -31,7 +31,7 @@ search: exclude
   {% for page in site.pages %}
     {% unless page.sitemap.exclude == "yes" %}
     <url>
-      <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+      <loc>http://{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
       {% if page.sitemap.last_updated %}
         <last_updated>{{ page.sitemap.last_updated | date: "%Y-%m-%d" }}</last_updated>
       {% elsif page.date %}
