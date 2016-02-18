@@ -10,11 +10,6 @@ weight: 2
 
 Let's have a quick view of the structure of a ribbon. A ribbon is composed of **tabs** which are themselves composed of **groups**. Controls like button, dropdown, menu are part of an **group**. In most case, an add-in will have only one **tab** which will contain one or more **groups**. The most common control that will be used is a **button**.
 
-Below is a custom tab with several controls to give you an idea of what is possible.
-
-![Tab sample](images/TabWithGroups.png)
-
-
 ## The AddInContext class
 
 In a new class project, create a static class named ***AddinContext*** that will keep the objects that you want to be unique in the application like Excel application instance, logger, an inversion of control container or a token cancellation. It will also be easier to dispose them when Excel closes
@@ -35,7 +30,7 @@ We have a reference to <b>NetOffice.ExcelApi;</b>
 Name the starting class ***Program*** and it needs to be inheriting from  ***IExcelAddIn*** (ExcelDna.Integration).
 Only the method *AutoOpen* need to be filled.
 
-In the *AutoOpen* method we will instantiate the unique instance of the Excel application from the *AddinContext* created above.
+In the *AutoOpen* method we will instantiate the unique instance of the Excel application from the *AddinContext* created above. You can instanciate in this method the inversion of controls container.
 
 {% highlight dotnet %}
     public class Program : IExcelAddIn
@@ -93,26 +88,13 @@ The following inherited methods will be created:
 
  * Those three buttons are in the same group named "Reporting".
  * One of those buttons is large while the other two are smalls.
- * The first button is large and is named "Allocation" and use the Microsoft image "repeat".
- * The two others buttons are smalls and are respectively named "Contributor" and "Performance".
- * The button "Contribitors" don't have an image while the button "Performance" is using the Microsoft image "Bold".
+ * The first button is large and is named "Button 1" and use the Microsoft image "repeat".
+ * The two others buttons are smalls and are respectively named "Contributor" and "Button 3".
+ * The button "Contribitors" don't have an image while the button "Button 3" is using the Microsoft image "Bold".
 
  We are going to see how to do it, it's quick and easy to do!!!
 
- **Defining the unique Identifier**
-
-Each of those elements have a unique identifier. It is important and mandatory to give them a unique “Id”. This way it is possible to associate the right event to the right control.
-
-So we will create private properties in the class *Ribbon* for each identifier. This way it will be easy to link the right control with the events.
-
-{% highlight dotnet %}
-    private const string SampleTab = "sampleTab";
-    private const string ReportingBox = "reportingBox";
-    private const string ReportingGroup = "reportingGroup";	
-    private const string PortfolioAllocationBtn = "allocationBtn";
-    private const string PortfolioContributorBtn = "contributorBtn";
-    private const string PortfolioPerformanceBtn = "performanceBtn";    
-{% endhighlight %}
+ ![Three buttons](images/quickStartThreeButtons.png)
 
 **Creating the new tab and group**
 
@@ -121,10 +103,10 @@ Inside the inherited method *CreateFluentRibbon*, we will define the UI part. We
 {% highlight dotnet %}
 	builder.CustomUi.Ribbon.Tabs(c =>
 	{
-		c.AddTab("Sample").SetId(TestTab)
+		c.AddTab("Sample").SetId("SampleTab")
 		    .Groups(g =>
 		    {
-		        g.AddGroup("Reporting").SetId(ReportingGroup)
+		        g.AddGroup("Reporting").SetId("ReportingGroup")
 		            .Items(); 
 		    });
 	});
@@ -139,25 +121,24 @@ To do so we will replace the code above *.Items()* by the below.
 {% highlight dotnet %}
 	.Items(d =>
 	{
-	    d.AddBouton("Allocation")
-	        .SetId(PortfolioAllocationBtn)
+	    d.AddButton("Button 1")
+	        .SetId("button1")
 	        .LargeSize()
 	        .ImageMso("Repeat");
 
-	    d.AddBox().SetId(ReportingBox)
+	    d.AddBox().SetId("ReportingBox")
 	        .HorizontalDisplay()
 	        .AddItems(i =>
 	        {  
-	            i.AddBouton("Contributor").SetId(PortfolioContributorBtn)
-	                .NormalSize().NoImage().ShowLabel()
-	                .Supertip("Portfolio best contributor")
-	                .Screentip("Display the top / bottom X contributor of performance.");
+	            i.AddButton("Button 2").SetId("button2")
+	                .NormalSize().NoImage().ShowLabel()	                
+	                .Screentip("Button 2")
+                    .Supertip("Displays a message box");
 
-	            i.AddBouton("Performance")
-	               .SetId(PortfolioPerformanceBtn)
+	            i.AddButton("Button 3")
+	               .SetId("button3")
 	               .NormalSize()
 	               .ImageMso("Bold");
-
 	        });
 	});
 {% endhighlight %}
@@ -167,7 +148,7 @@ To do so we will replace the code above *.Items()* by the below.
 {{site.data.alerts.end}}
 
 {{site.data.alerts.note}}
- A <strong>supertip</strong> is a enhanced screentip.
+ A <strong>supertip</strong> is a non-bold screentip.
 {{site.data.alerts.end}}
 
 
@@ -186,21 +167,21 @@ The code that will be used to define those events is the following:
     protected override void CreateRibbonCommand(IRibbonCommands cmds)
     {
         // Reporting Group
-        cmds.AddButtonCommand(PortfolioPerformanceBtn)
+        cmds.AddButtonCommand("button3")
             .IsEnabled(() => AddinContext.ExcelApp.Worksheets.Count() > 2)
-            .Action(() => MessageBox.Show("Performance button clicked"));
+            .Action(() => MessageBox.Show("button 3 clicked"));
 
-        cmds.AddButtonCommand(PortfolioContributorBtn)
-            .Action(() => MessageBox.Show("To enable the Performance button you need to have 3 sheets."));
+        cmds.AddButtonCommand("button2")
+            .Action(() => MessageBox.Show("To enable the button 3 you need to have 3 sheets."));
 
-        cmds.AddButtonCommand(PortfolioAllocationBtn)
+        cmds.AddButtonCommand("button1")
             .Action(() => MessageBox.Show("Add one more sheet"));
 
-        cmds.AddBoxCommand(ReportingBox)
+        cmds.AddBoxCommand("ReportingBox")
             .IsVisible(() => AddinContext.ExcelApp.Worksheets.Count() > 1);
     }
 {% endhighlight %}
 
-* When clicking on the button *Allocation* a message box will be display stating "Add one more sheet".
+* When clicking on the button *Button 1* a message box will be display stating "Add one more sheet".
 * Adding one more sheet will trigger the visibility condition for the box containing the two small buttons. The buttons will be visible if there is more than one sheet in the workbook.
-* To enable the button *Performance*, it is necessary to add an extra sheet as the condition to enable that button is to have more than two sheets.
+* To enable the button *Button 3*, it is necessary to add an extra sheet as the condition to enable that button is to have more than two sheets.
