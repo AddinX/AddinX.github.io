@@ -1,6 +1,7 @@
 allowed-tags:
   - getting_started
   - fluent_ribbon
+  - control
   - content_types
   - navigation
   - formatting
