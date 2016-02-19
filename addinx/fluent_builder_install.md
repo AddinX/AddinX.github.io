@@ -28,7 +28,7 @@ You will need to get **NetOffice** as we are using it instead of **Office.Intero
 
 
 {% highlight yaml %}
-PM> Install-Package AddinX.Core.ExcelDna
+PM> Install-Package AddinX.Ribbon.ExcelDna
 PM> Install-Package NetOffice.Excel -Version 1.7.3
 {% endhighlight %}
 

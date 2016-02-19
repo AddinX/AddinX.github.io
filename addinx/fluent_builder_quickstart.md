@@ -50,7 +50,7 @@ In the *AutoOpen* method we will instantiate the unique instance of the Excel ap
 
 ## The ribbon class
 
-Create a new class named ***Ribbon*** and it needs to be inheriting from  ***RibbonFluent*** (AddinX.Core.ExcelDna).
+Create a new class named ***Ribbon*** and it needs to be inheriting from  ***RibbonFluent*** (AddinX.Ribbon.ExcelDna).
 This class must be **ComVisible** in order for Excel-DNA to use it.
 
 The following inherited methods will be created:

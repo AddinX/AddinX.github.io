@@ -10,9 +10,9 @@ weight: 1
 
 ## Control unique identifier
 
-* It is mandatory to include an identifier to each control and each identifier must be unique. There is three different type of identifier that can be used to reference a control.
+It is mandatory to include an identifier to each control and each identifier must be unique. There is three different type of identifier that can be used to reference a control.
 
-The “Standard” identifier is a string of character which is unique and can be used to reference the control. The scope of the identifier is limited to the current add-in / ribbon.
+* The “Standard” identifier is a string of character which is unique and can be used to reference the control. The scope of the identifier is limited to the current add-in / ribbon.
 
 {% highlight dotnet %}
 	.Items(d =>
@@ -27,7 +27,7 @@ The “Standard” identifier is a string of character which is unique and can b
 	.Items(d =>
 	{
 	    d.AddButton("Save File").SetIdMso("FileSave")
-         .NormalSize().ImageMso("FileSave");	       
+	     .NormalSize().ImageMso("FileSave");	       
 	});
 {% endhighlight %}
 

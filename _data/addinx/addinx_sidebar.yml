@@ -61,6 +61,14 @@ entries:
       version: all
       output: web, pdf
 
+    - title: Contact
+      url: /addinx/contact.html
+      audience: everyone
+      platform: all
+      product: all
+      version: all
+      output: web, pdf
+
   - title: Ribbon Builder
     audience: everyone
     platform: all
