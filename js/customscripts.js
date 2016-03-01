@@ -1,7 +1,28 @@
 
 $('#mysidebar').height($(".nav").height());
 
-
+$('#contactForm').on('submit', function(){
+ $('#myModal').modal('hide');
+})
+$(function(){
+$('#contactSubmit').on('click',function(e) {
+        $(document).trigger("set-alert-id-messageInfo", [
+        {
+          message: "Your message has been sent.",
+          priority: "info"
+        }]);
+    });
+});	
+		  
+var iframe = document.getElementById("iframe");
+iframe.onload = function () { formSubmitResponse(iframe); };
+function formSubmitResponse(iframe) {
+  var idocument = (iframe.contentDocument || iframe.contentWindow.document);
+  if(idocument) {
+    var responseFromBackend = idocument.getElementsByTagName("body")[0].innerHTML;	
+  }
+}
+   
 $( document ).ready(function() {
 
     //this script says, if the height of the viewport is greater than 800px, then insert affix class, which makes the nav bar float in a fixed
