@@ -9,6 +9,7 @@ destination: ../doc_outputs/addinx/everyone
 topnav_title: Add-in X Documentation
 homepage_title: Add-in X Documentation
 site_title: Add-in X
+url: www.addinx.org
 project_folder: addinx
 company_name: Addin X
 footer_image_location: ../common_images/125-addinX-logo.png
