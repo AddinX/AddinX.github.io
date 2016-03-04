@@ -185,3 +185,14 @@ The code that will be used to define those events is the following:
 * When clicking on the button *Button 1* a message box will be display stating "Add one more sheet".
 * Adding one more sheet will trigger the visibility condition for the box containing the two small buttons. The buttons will be visible if there is more than one sheet in the workbook.
 * To enable the button *Button 3*, it is necessary to add an extra sheet as the condition to enable that button is to have more than two sheets.
+
+In the method **OnOpening**, we need to refresh the ribbon when there is a change on a Excel sheet.
+
+{% highlight dotnet %}
+    public override void OnOpening()
+    {
+        AddinContext.ExcelApp.SheetActivateEvent += (e) => Ribbon?.Invalidate();
+        AddinContext.ExcelApp.SheetChangeEvent += (a, e) => Ribbon?.Invalidate();
+    }
+{% endhighlight %}
+{{site.data.alerts.note}} We are using the Excel application from <b>NetOffice.ExcelApi</b> {{site.data.alerts.end}}
