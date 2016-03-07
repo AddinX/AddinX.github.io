@@ -14,6 +14,7 @@ project_folder: addinx
 company_name: Addin X
 footer_image_location: ../common_images/125-addinX-logo.png
 sidebar_image_location: ../common_images/company_logo.png
+google_analytics: UA-74745371-1
 github_editme_path:
 disqus_shortname: 
 # variables
