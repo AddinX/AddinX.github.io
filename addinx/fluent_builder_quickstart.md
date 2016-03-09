@@ -25,12 +25,12 @@ We have a reference to <b>NetOffice.ExcelApi;</b>
 {{site.data.alerts.end}}
 
 
-## The starting class
+## Program class (the entry point)
 
 Name the starting class ***Program*** and it needs to be inheriting from  ***IExcelAddIn*** (ExcelDna.Integration).
 Only the method *AutoOpen* need to be filled.
 
-In the *AutoOpen* method we will instantiate the unique instance of the Excel application from the *AddinContext* created above. You can instanciate in this method the inversion of controls container.
+In the *AutoOpen* method we will instantiate the unique instance of the Excel application from the *AddinContext* created above. 
 
 {% highlight dotnet %}
     public class Program : IExcelAddIn
