@@ -2,6 +2,7 @@
 title: Introduction
 tags: [getting_started]
 audience: everyone
+summary: "Add-in X is a toolkit that allows you to create robust add-in with Excel-DNA." 
 type: first_page
 homepage: true
 ---
@@ -30,7 +31,7 @@ In theory, this type of tool has a life time relatively short: 1 to 2 years' max
 
 ## What is add-in X 
 
-Add-in X is a toolkit composed of several libraries to create robust add-in (tactical tool) using the open-source projects <a href="http://excel-dna.net/">Excel-DNA</a> and <a href="https://netoffice.codeplex.com/">NetOffice</a>. It encapsulates the complexity so the developer can start implementing quickly quality and robust tool. This way he creates added value from day one. 
+Add-in X is a toolkit composed of several libraries to create robust add-in (tactical tool) using the open-source projects <a href="http://excel-dna.net/">Excel-DNA</a> . It encapsulates the complexity so the developer can start implementing quickly quality and robust tool. This way he creates added value from day one. 
 
 <div style="text-align:center">
 <img  src="images/03-shema-excel-dna-eng.png" alt="addin multi-sources" style="width:500px;height:345px;">
