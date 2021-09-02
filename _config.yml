@@ -73,3 +73,5 @@ defaults:
       search: true
       tooltip: true
 
+
+theme: jekyll-theme-midnight
